@@ -9,7 +9,7 @@
     "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "yasin",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.13.0",
@@ -18,5 +18,9 @@
     "globals": "^15.11.0",
     "nodemon": "^3.1.7",
     "prettier": "3.3.3"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "pug": "^3.0.3"
   }
 }
