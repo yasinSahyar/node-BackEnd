@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= title
+    style
+      | body {
+      |   font-family: Arial, sans-serif;
+      |   margin: 0;
+      |   padding: 20px;
+      |   background-color: #f4f4f4;
+      | }
+      | h1 {
+      |   color: #333;
+      | }
+      | p {
+      |   color: #555;
+      | }
+      | ul {
+      |   padding: 0;
+      |   list-style: none;
+      | }
+      | ul li {
+      |   margin: 10px 0;
+      | }
+      | a {
+      |   text-decoration: none;
+      |   color: #007BFF;
+      | }
+      | a:hover {
+      |   text-decoration: underline;
+      | }
+  body
+    h1= title
+    p= message
+
+    h2 API Endpoints
+    ul
+      li 
+        a(href="/api/items") GET /api/items - Retrieve all items
+      li 
+        span POST /api/items - Add a new item
+      li 
+        span PUT /api/items/:id - Update an item by ID
+      li 
+        span DELETE /api/items/:id - Delete an item by ID
+
+    h2 Static Files
+    ul
+      li 
+        a(href="/static/media1.jpg") View media1.jpg
+      li 
+        a(href="/static/media2.jpeg") View media2.jpeg
